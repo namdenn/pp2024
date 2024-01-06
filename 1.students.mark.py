@@ -32,22 +32,19 @@ def input_info_course(num):
         course_list.append(course_info)
     return course_list
 
-def select_course(course_list):
+def input_mark(course_list, student_list):
     course_id = int(input("Select your course: "))
-    selected_course = None
     for course in course_list:
         if course['ID'] == course_id:
             selected_course = course
             break
-    if selected_course:
-        print("ID:", selected_course['ID'])
-        print("Name:", selected_course['NAME'])
-        for student in student_list:
-            student_marks = float(input(f"Enter the marks for student {student['ID']}: "))
-            student['MARKS'] = student_marks
-            print(f"Mark for student {student['ID']}: {student_marks}")
-    else:
-        print("///Course is not found///")
+
+    print("ID:", selected_course['ID'])
+    print("Name:", selected_course['NAME'])
+    for i in student_list:
+        student_mark = float(input(f"Enter the marks for student {i['ID']}: "))
+        i['MARK'] = student_mark
+        print(f"Mark for student {i['ID']}: {student_mark}")
 
 number_student = input_number_student()
 student_list = input_info_student(number_student)
@@ -61,7 +58,8 @@ print("---------------------------------------------------")
 print("The number of courses is:", number_course)
 print(course)
 print("---------------------------------------------------")
-select_course(course)
+input_mark(course, student_list)
 print("---------------------------------------------------")
-print("Updated student list:")
-print(student_list)
+print("__STUDENTS MARK__")
+for i, student_info in enumerate(student_list, 1):
+    print(f"{i}. ID: {student_info['ID']}, Name: {student_info['NAME']}, Mark: {student_info['MARK']}  ")
