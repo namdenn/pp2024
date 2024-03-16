@@ -1,0 +1,12 @@
+total 40
+drwxrwxr-x 5 nick nick 4096 Mar 16 10:19 .
+drwxrwxr-x 7 nick nick 4096 Mar 16 10:11 ..
+-rw-rw-r-- 1 nick nick 1007 Mar 16 10:15 7.shell.py
+drwxrwxr-x 3 nick nick 4096 Mar 13 16:02 domains
+-rw-rw-r-- 1 nick nick 1994 Mar 15 10:58 input.py
+-rw-rw-r-- 1 nick nick    0 Mar 16 10:19 input.txt
+-rw-rw-r-- 1 nick nick 1189 Mar 16 09:51 main.py
+-rw-rw-r-- 1 nick nick  443 Mar 14 15:34 output.py
+-rw-rw-r-- 1 nick nick  449 Mar 16 10:13 out.txt
+drwxrwxr-x 2 nick nick 4096 Mar 15 10:58 __pycache__
+drwxrwxr-x 2 nick nick 4096 Mar 16 09:48 .vscode
